@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 
 ::selection {
   color: white;
@@ -10,7 +8,7 @@
 
 body {
     box-sizing: border-box;
-    background-color: #F294C0;
+    background-color: #ff9eda;
     padding: 0;
     margin: 0;
 }
@@ -36,7 +34,8 @@ input {
 }
 
 .wrapper h1 {
-    font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Paytone One', sans-serif;
+  letter-spacing: 3px;
     color: #D984AC;
 }
 
@@ -47,13 +46,14 @@ input {
   margin-bottom: 25px;
   box-sizing: border-box;
   border: 2px solid black;
-  box-shadow: 3px 4px black;
-  font-family: 'Josefin Sans', sans-serif;
+  box-shadow: 5px 5px black;
+  font-family: 'Poppins', sans-serif;
+  transition: 500ms;
+  border-radius: 2px;
 }
 
 .wrapper label {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 600;
+  font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
 }
 
@@ -65,9 +65,10 @@ input {
     box-sizing: border-box;
     border: 2px solid black;
     box-shadow: 3px 4px black;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     outline: none;
     background-color: #D984AC;
+    transform: scale(1.05);
   }
 
   .wrapper button {
@@ -77,11 +78,12 @@ input {
     margin-bottom: 40px;
     box-sizing: border-box;
     border: 2px solid black;
-    box-shadow: 3px 4px black;
-    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: 5px 5px black;
+    font-family: 'Poppins', sans-serif;
     outline: none;
     background-color: #D984AC;
-    border-radius: 20px;
+    border-radius: 6px;
+    transition: all 0.3s;
   }
 
   .wrapper button:hover {
@@ -92,13 +94,25 @@ input {
     box-sizing: border-box;
     border: 2px solid black;
     box-shadow: 3px 4px black;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     outline: none;
     background-color: #BF7597;
-    border-radius: 20px;
+    border-radius: 6px;
     cursor: pointer;
+    transform: scale(1.05);
   }
 
   .wrapper button:active {
     color: white;
+    transform: scale3d(1, 0, 1);
+  }
+
+  .warning {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;;
+    color: white;
+    text-shadow: 1px 1px 1px black;
   }
